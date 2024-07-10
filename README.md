@@ -24,7 +24,9 @@ someone asks for it :)
    configuration.
 2. **Static Type Checking**: The development setup this framework provides uses
    [Teal](https://github.com/teal-language/tl) to provide static type checking.
-3. **Modpack Support**: Aqua introduces a new paradigm for modpacks, allowing you to dynamically
+3. **JSON Schemas**: Aqua uses JSON schemas to provide auto-completion and validation for your
+   configuration files.
+4. **Modpack Support**: Aqua introduces a new paradigm for modpacks, allowing you to dynamically
    define modpacks based on the mods in the current project.
 5. **No Watermarking**: I am not adding any needless notices to your files. The only thing that will
    be added to the files is a comment containing the framework version. This is to help with

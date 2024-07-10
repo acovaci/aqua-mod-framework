@@ -1,0 +1,5 @@
+- version: 0.0.1
+  date: {{ meta.today }}
+  changes:
+    - type: info
+      message: Initial release

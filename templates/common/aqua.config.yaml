@@ -1,0 +1,5 @@
+version: {{ meta.framework.version }}
+project:
+    type: {{ project.type }}
+    name: {{ project.name }}
+

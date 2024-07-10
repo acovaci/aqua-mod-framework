@@ -1,10 +1,10 @@
-# yaml-language-server: $schema=../../schemas/info.d.json
+# yaml-language-server: $schema=https://adriancovaci.dev/aqua-mod-framework/info.d.json
 # This file was generated using {{ meta.framework.name }} v{{ meta.framework.version }}
 
-name: {{ mod.name }}
-title: {{ mod.title }}
-version: {{ mod.version }}
-author: {{ mod.author }}
-{% if mod.dependencies %}
-factorio_version: {{ mod.dependencies.factorio }}
+name: {{ project.name }}
+title: {{ project.title }}
+version: {{ project.version }}
+author: {{ project.author }}
+{% if project.dependencies %}
+factorio_version: {{ project.dependencies.factorio }}
 {% endif %}

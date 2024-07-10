@@ -1,5 +1,5 @@
 [package]
-name = "teal-factorio-mod-framework"
+name = "aqua-framework"
 version = "0.0.1"
 edition = "2021"
 
@@ -8,3 +8,6 @@ clap = { version = "4.5.9", features = ["derive"] }
 minijinja = { version = "2.0.3", features = ["loader"] }
 serde = { version = "1.0.204", features = ["derive"] }
 thiserror = "1.0.61"
+
+[dev-dependencies]
+uuid = { version = "1.10.0", features = ["v4"] }
