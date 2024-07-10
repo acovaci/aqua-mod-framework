@@ -1,8 +1,22 @@
 # Aqua Mod Framework for Factorio
 
-This is a mod framework for Factorio that provides a set of tools to help you create mods. It is
-designed to be easy to use and to provide a consistent way to create mods, so that you can focus on
-creating the content you want to add to the game instead of endless configuration files.
+Factorio mods with static type checking! Aqua is a mod framework for Factorio that aims to make
+creating mods easier and more enjoyable. It provides a CLI tool to help you create and manage your
+mods, so that you can focus on the fun part.
+
+Aqua also includes a batteries-included development setup that uses [Teal](https://www.github.com/teal-language/tl)
+to provide static type checking for your mods. This helps you catch bugs early and write more
+reliable code.
+
+Finally, Aqua introduces a new paradigm for modpacks, allowing you to dynamically define modpacks
+based on the mods in the current project. This makes it easier to manage dependencies and
+compatibility between mods.
+
+## Installation
+
+This project is still in development, so it is not yet ready for use. However, you can install it
+from the GitHub repository if you want to try it out. I will document the installation process once
+someone asks for it :)
 
 ## Goals
 
@@ -19,6 +33,30 @@ creating the content you want to add to the game instead of endless configuratio
 6. **Try not to break the VSCode Mod Development Extension** (but I reserve the right to change my
    mind on this one): I am trying to make sure that the VSCode Mod Development Extension still works
     with this framework, but I am not going to guarantee that it will always work.
+
+## Features
+
+This is a list of the planned features. Check the GitHub Project for the current status of each
+feature.
+
+* **Command Line Interface**: Aqua provides a CLI tool to help you create and manage your mods.
+* **Diverse Modding Setup**: Aqua supports three different kinds of development setup:
+    * **Single Mod**: Your project contains a single, standalone mod.
+    * **Multiple Mods**: Your project contains multiple mods that are loosely related.
+    * **Modpack**: Your project contains multiple mods that are tightly related. The framework will
+      automatically generate an extra mod for you, that will strongly depend on the other mods,
+      keeping the versions locked. This should ensure that your users will always be using a
+      single set of versions for each of your modpack versions.
+* **Static Type Checking**: Aqua uses Teal to provide static type checking for your mods. Aqua also
+  provides a type definition library for Factorio, to help you write more reliable code.
+* **YAML Configuration**: Aqua uses YAML configuration files to define your mods, modpacks, and
+  other settings. This way, it can auto-populate some of the fields for you, leaving you with only
+  the important stuff to fill in.
+* **Strongly Opinionated**: Aqua is strongly opinionated, meaning that it will make a lot of
+  decisions for you. This is to help you get started quickly, and to make sure that your mods are
+  following best practices.
+* **Versioning Tools**: Aqua provides tools to help you manage your mod versions, easily being able
+  to bump the version number, and to generate a changelog.
 
 ## Can I use this?
 
