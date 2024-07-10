@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../../schemas/info.d.json
+# This file was generated using {{ meta.framework.name }} v{{ meta.framework.version }}
+
+name: {{ mod.name }}
+title: {{ mod.title }}
+version: {{ mod.version }}
+author: {{ mod.author }}
+{% if mod.dependencies %}
+factorio_version: {{ mod.dependencies.factorio }}
+{% endif %}

@@ -1,0 +1,6 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema#",
+    "$id": "urn:teal-factorio-mod-framework:v0.0.1:schema:mod-name",
+    "type": "string",
+    "pattern": "^[a-z0-9-]+$"
+}
